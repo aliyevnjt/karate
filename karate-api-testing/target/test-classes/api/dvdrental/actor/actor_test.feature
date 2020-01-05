@@ -11,3 +11,8 @@ Feature: Get all actors
     Then method get
     Then print baseUrl
 
+@tag2
+  Scenario: Get all actors
+    Given url baseUrl
+    And path 'film'
+    Then method get
