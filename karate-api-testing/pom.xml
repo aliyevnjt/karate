@@ -8,6 +8,7 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
+		<tags>~@ignore</tags>
 	</properties>
 
 	<dependencies>
@@ -59,7 +60,7 @@
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<systemProperties>
 						<baseUrl></baseUrl>
-						<karate.options>--tags ~@ignore</karate.options>
+						<karate.options>--tags ${tags}</karate.options>
 					</systemProperties>
 				</configuration>
 			</plugin>
