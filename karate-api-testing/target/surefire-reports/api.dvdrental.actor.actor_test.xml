@@ -1,0 +1,8 @@
+<testsuite failures="0" name="api/dvdrental/actor/actor_test.feature" skipped="0" tests="1" time="0.594917">
+  <testcase classname="api.dvdrental.actor.actor_test" name="Get all actors" time="0.594917">
+    <system-out>* def jsonRequest = read('classpath:api/dvdrental/jsonFiles/actor.json') .. passed
+Given url baseUrl + "/actor" .............................................. passed
+Then method get ........................................................... passed
+Then print baseUrl ........................................................ passed</system-out>
+  </testcase>
+</testsuite>
