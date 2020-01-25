@@ -1,0 +1,17 @@
+[{
+    "film_id": 1009,
+    "title": "Anadolu Kartallari",
+    "description": "Try to land it safety",
+    "release_year": 2011,
+    "language_id": 1,
+    "rental_duration": 7,
+    "rental_rate": 4.99,
+    "length": 86,
+    "replacement_cost": 14.99,
+    "rating": "NC-17",
+    "last_update": "2020-01-02T21:43:44.339327",
+    "special_features": [
+      "Trailers"
+    ],
+    "fulltext": "'anadolu':1 'kartallari':2 'land':5 'safeti':7 'tri':3"
+ }]
