@@ -5,10 +5,10 @@ function fn() {
     env = 'dev'; // a custom 'intelligent' default
   }
   var config = { // base config JSON
-    baseUrl: karate.properties['baseUrl'] || 'http://localhost:3000',
-    appSecret: 'my.secret',
-    someUrlBase: 'https://some-host.com/v1/auth/',
-    anotherUrlBase: 'https://another-host.com/v1/'
+    baseUrl: karate.properties['baseUrl'] || 'https://api.flowlyst.io/maestro.html',
+    username: karate.properties['username'] || 'matt',
+    password: karate.properties['pwd'] || 'matt'
+    
   };
   if (env == 'stage') {
     // over-ride only those that need to be

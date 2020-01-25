@@ -67,6 +67,8 @@
 					<argLine>-Dfile.encoding=UTF-8</argLine>
 					<systemProperties>
 						<baseUrl></baseUrl>
+						<username></username>
+						<pwd></pwd>
 						<karate.options>--tags ${tags}</karate.options>
 					</systemProperties>
 				</configuration>

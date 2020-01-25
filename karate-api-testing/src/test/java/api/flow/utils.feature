@@ -1,6 +1,7 @@
 Feature: Utils
-
+	@utils
   Scenario: Utils
+  * def schoolA = 'frm-b7cc14c8-4081-4ec0-b96c-042f53669474'
     * configure report = { showLog: true, showAllSteps: false }
     * def currDate =
       """
@@ -25,3 +26,39 @@ Feature: Utils
     # since the DbUtils returns a Java Map, it becomes normal JSON here !
     # which means that you can use the full power of Karate's 'match' syntax
     #
+    
+    #Login and capture token
+    * def jsonLogin = read('classpath:api/flow/jsonFiles/login.json')
+    Given url baseUrl
+    * set jsonLogin.username = username
+    * set jsonLogin.password = password
+		Then request jsonLogin
+		Then header Content-Type = 'application/json'
+		And method post
+		* def token = response.payload.token
+		
+    
+    
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

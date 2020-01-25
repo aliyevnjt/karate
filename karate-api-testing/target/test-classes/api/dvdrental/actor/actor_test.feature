@@ -6,10 +6,10 @@ Feature: Get all actors
     * def jsonRequest = read('classpath:api/dvdrental/jsonFiles/actor.json')
 
   #@tag1
-  #Scenario: Get all actors
-  #Given url baseUrl + '/actor'
-  #Then method get
-  #And status 200
+  Scenario: Get all actors
+  Given url baseUrl + '/film'
+  Then method get
+  And status 200
   #And match response[0].first_name == 'Penelope'
   #And match response[0].actor_id == 1
   #Scenario: Create an actor
