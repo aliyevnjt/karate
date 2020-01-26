@@ -4,6 +4,7 @@ Feature: Utils
   * def schoolA = 'frm-b7cc14c8-4081-4ec0-b96c-042f53669474'
     * configure report = { showLog: true, showAllSteps: false }
     * def currDate =
+    
       """
       function(days){
       	var LocalDate = Java.type('java.time.LocalDate');
@@ -32,6 +33,7 @@ Feature: Utils
     Given url baseUrl
     * set jsonLogin.username = username
     * set jsonLogin.password = password
+    # change from merve
 		Then request jsonLogin
 		Then header Content-Type = 'application/json'
 		And method post
