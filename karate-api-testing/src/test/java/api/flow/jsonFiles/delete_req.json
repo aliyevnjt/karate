@@ -1,0 +1,22 @@
+{
+	"operation": "destroy_request",
+	"token": "sss-407ace30-4586-4867-af1f-f10ae4a4a416",
+	"payload": {
+		"guid": "rqs-f014f4ea-f858-41c5-a2dc-fafafddd0463",
+		"form_guid": "frm-b7cc14c8-4081-4ec0-b96c-042f53669474",
+		"department_guid": "dpt-4c91f735-ee5a-4984-b513-c224ffa8b7db",
+		"title": "Step4",
+		"description": "Action",
+		"status": "not_published",
+		"next_to_action": "",
+		"purchased_at": 0,
+		"delivered_at": 0,
+		"created_by": "usr-f98df3e5-d6d4-4b37-bc78-56772bd7d7cc",
+		"created_at": "1580019824732",
+		"updated_by": "usr-f98df3e5-d6d4-4b37-bc78-56772bd7d7cc",
+		"updated_at": "1580019824732",
+		"destroyed": false,
+		"school_guid": "sch-52b0e98e-97b8-462a-a23c-39f05a8816da",
+		"next_to_action__user": []
+	}
+}
