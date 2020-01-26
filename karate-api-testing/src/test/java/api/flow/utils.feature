@@ -36,6 +36,7 @@ Feature: Utils
 		Then header Content-Type = 'application/json'
 		And method post
 		* def token = response.payload.token
+		#change from nijat
 		
     
     
