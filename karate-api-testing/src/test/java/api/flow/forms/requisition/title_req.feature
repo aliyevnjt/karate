@@ -5,11 +5,11 @@ Feature: Create Requisition Form
     * def jsonCreate = read('classpath:api/flow/jsonFiles/create_requsition.json')
     * def jsonDelete = read('classpath:api/flow/jsonFiles/delete_req.json')
 
-  Scenario: Create Requisition Form
+  Scenario Outline: Title Requisition Form Negative Scenario
     Given url baseUrl
     Then header Content-Type = 'application/json'
-    * set jsonCreate.token = token
-    * set jsonCreate.payload.title = 'Text Book'
+    * <action>
+    * set jsonCreate.payload.title = <title>
     * set jsonCreate.payload.description = 'Math Text Book'
     #id for school A
     * set jsonCreate.payload.form_guid = schoolA
@@ -17,14 +17,10 @@ Feature: Create Requisition Form
     * set jsonCreate.payload.department_guid = 'dpt-5cda8502-827d-467b-aea0-fd6e6bb1222a'
     And request jsonCreate
     And method post
-    And status 200
-    And match response.description == 'Record´s created successfully.'
-    And match response.payload.form_guid == schoolA
-    * def formId = response.payload.guid
-    * set jsonDelete.token = token
-    * set jsonDelete.payload.guid = formId
-    Then request jsonDelete
-    And method post
-    And status 200
-    And match response.description == "Record´s deleted successfully."
-    And match response.payload.guid == formId
+    And match response.description == <errorMessage>
+    * print <desc>
+
+    Examples: 
+      | desc                      | title | errorMessage                | action                            |
+      | "Create with empty title" | ""    | "Missing properties: title" | set jsonCreate.token = token      |
+      | "wrong token"             | ""    | "An invalid token´s provided." | set jsonCreate.token = "skdjbgdk" |
