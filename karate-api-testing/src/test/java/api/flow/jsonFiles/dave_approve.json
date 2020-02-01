@@ -1,0 +1,21 @@
+{
+	"operation": "approve_request",
+	"token": "sss-b9e98c52-8fe2-4a82-a323-2a7224963796",
+	"payload": {
+		"guid": "rqs-d83c51ac-0fa8-4164-89d0-59418f52c0d8",
+        "form_guid": "frm-b7cc14c8-4081-4ec0-b96c-042f53669474",
+        "department_guid": "dpt-6c52d44e-e096-474d-9eda-e604dc529b91",
+        "title": "Lalala 104",
+        "description": "BlaBlaBla 104",
+		"status": "pending_approval",
+		"next_to_action": "usr-dede2077-05b4-4f96-a392-bb229691bf6f",
+		"purchased_at": 0,
+		"delivered_at": 0,
+		"created_by": "usr-f98df3e5-d6d4-4b37-bc78-56772bd7d7cc",
+		"created_at": "1580437625968",
+		"updated_by": "usr-f98df3e5-d6d4-4b37-bc78-56772bd7d7cc",
+		"updated_at": "1580572206351",
+		"destroyed": false,
+		"action_notes": "Approving textbook"
+	}
+}

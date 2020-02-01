@@ -23,8 +23,8 @@ Feature: Create Requisition Form
     * def formId = response.payload.guid
     * set jsonDelete.token = token
     * set jsonDelete.payload.guid = formId
-    Then request jsonDelete
-    And method post
-    And status 200
-    And match response.description == "Record´s deleted successfully."
-    And match response.payload.guid == formId
+    #Then request jsonDelete
+    #And method post
+    #And status 200
+    #And match response.description == "Record´s deleted successfully."
+    #And match response.payload.guid == formId
