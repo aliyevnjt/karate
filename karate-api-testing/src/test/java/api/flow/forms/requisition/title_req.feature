@@ -21,6 +21,6 @@ Feature: Create Requisition Form
     * print <desc>
 
     Examples: 
-      | desc                      | title | errorMessage                | action                            |
-      | "Create with empty title" | ""    | "Missing properties: title" | set jsonCreate.token = token      |
+      | desc                      | title | errorMessage                   | action                            |
+      | "Create with empty title" | ""    | "Missing properties: title"    | set jsonCreate.token = token      |
       | "wrong token"             | ""    | "An invalid token´s provided." | set jsonCreate.token = "skdjbgdk" |

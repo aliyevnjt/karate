@@ -1,0 +1,32 @@
+{
+	"operation": "addit_request",
+	"token": "sss-5110d4b7-3468-4e94-af5c-87df0a289b28",
+	"payload": {
+		"guid": "",
+		"title": "Mathtext Book13",
+		"description": "Bookbook13",
+		"status": "not_published",
+		"form_guid": "frm-b7cc14c8-4081-4ec0-b96c-042f53669474",
+		"department_guid": "dpt-5cda8502-827d-467b-aea0-fd6e6bb1222a",
+		"items": [{
+			"localId": "new--1580567787148",
+			"request_guid": "",
+			"inputs": {
+				"title": "Book12",
+				"description": "Book12",
+				"vendor": ["Target"],
+				"url": "https://target/com",
+				"count": 3,
+				"price": 120000,
+				"amount": 100000
+			},
+			"account": {
+				"guid": "acc-04289181-cb11-471d-a1eb-42d3ecead81d",
+				"title": "Student's Supply"
+			},
+			"editing": false,
+			"account_guid": "acc-04289181-cb11-471d-a1eb-42d3ecead81d"
+		}],
+		"action_notes": "Initial Request"
+	}
+}
