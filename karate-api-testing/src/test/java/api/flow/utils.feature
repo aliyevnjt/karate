@@ -1,11 +1,12 @@
 Feature: Utils
-	@utils
+	@utilschange
   Scenario: Utils
   * def dave_id = "usr-dede2077-05b4-4f96-a392-bb229691bf6f"
   * def annm_id = "usr-3c9751b3-e2b8-4454-8def-7883b2681281"
   * def schoolA = 'frm-b7cc14c8-4081-4ec0-b96c-042f53669474'
   * def dept_science = "dpt-6c52d44e-e096-474d-9eda-e604dc529b91"
     * configure report = { showLog: true, showAllSteps: false }
+    * def
     * def currDate =
     
       """
