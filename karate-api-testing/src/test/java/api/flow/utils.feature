@@ -6,7 +6,6 @@ Feature: Utils
   * def schoolA = 'frm-b7cc14c8-4081-4ec0-b96c-042f53669474'
   * def dept_science = "dpt-6c52d44e-e096-474d-9eda-e604dc529b91"
     * configure report = { showLog: true, showAllSteps: false }
-    * def
     * def currDate =
     
       """
