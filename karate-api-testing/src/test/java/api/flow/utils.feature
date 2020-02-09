@@ -1,8 +1,9 @@
 Feature: Utils
-	@utils
+	@utilschange
   Scenario: Utils
   * def schoolA = 'frm-b7cc14c8-4081-4ec0-b96c-042f53669474'
     * configure report = { showLog: true, showAllSteps: false }
+    * def
     * def currDate =
     
       """
